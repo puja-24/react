@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useTodo } from '../contexts/TodoContext';
+import { useTodo } from '../context/TodoContext';
 
 function TodoItem({ todo }) {
   const [isTodoEditable, setIsTodoEditable] = useState(false)
@@ -17,8 +17,8 @@ function TodoItem({ todo }) {
 
   return (
       <div
-          className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black ${
-              todo.completed ? "bg-[#c6e9a7]" : "bg-[#ccbed7]"
+          className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/90 duration-300  text-black ${
+              todo.completed ? "bg-[#c6e9a7]/80" : "bg-[#f7a25c]/80"
           }`}
       >
           <input

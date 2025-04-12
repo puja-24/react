@@ -1,5 +1,4 @@
 import {createContext, useContext} from "react"
-import { TodoProvider } from "./context"; // ✅ Correct
 
 export const TodoContext = createContext({
     todos: [
